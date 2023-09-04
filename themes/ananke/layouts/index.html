@@ -1,0 +1,5 @@
+{{ with .Site.GetPage "/posts/my-first-post" }}
+    {{ .Render "single" }}
+{{ else }}
+    <p>Error: The specified post was not found!</p>
+{{ end }}
